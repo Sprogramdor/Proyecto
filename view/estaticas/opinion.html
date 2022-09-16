@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/panlog.ico" type="image/x-icon">
+    <meta name="description" content="Formulario para realizar una calificacion de atencion al cliente con respecto a la pasteleria">
+    <meta name="keywords" content="Mycake, productos, servicios, atencion, variedad, ">
+    <meta name="author" content="CRUZ DIAZ MILENA LIZBETH">
+    <link rel="icon" href="assets/img/panlog.ico" type="image/x-icon">
+    <title>Mycake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #califique {
+            width: 70%;
+            margin: 35px auto;
+            -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            padding: 2rem;
+            border-radius: .5rem;
+        }
+
+        .label {
+            color: #000;
+        }
+
+        span {
+            color: red;
+            font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .check :hover {
+            color: white;
+            background-color: black;
+        }
+
+        .radio :hover {
+            color: white;
+            background-color: black;
+        }
+
+        h1::first-letter {
+            color: orange;
+            font-variant: small-caps;
+
+
+        }
+
+        div[class="encuesta"] {
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container bar">
+            <a href="index.html"><img class="bar__img" src="img/logo.png" alt="logo" /></a>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menu__link" href="index.html">Inicio</a></li>
+                    <li><a class="menu__link" href="productos.html">Productos</a></li>
+                    <li><a class="menu__link" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="menu__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="califique">
+
+
+
+        <form id="califiquenos">
+            <fieldset>
+                <h1 style="color: #000;">Califica Nuestro Servicio</h1>
+                <div class="encuesta">
+                    </br> <label> ¿Con que frecuencia visita nuestra Pasteleria? </label>
+                    <div class="radio">
+                        <input class="field rad" id="Diario" type="radio" name="dia" value="Diario">
+                        <label class="label ">1. Diariamente </label>
+
+                    </div>
+                    <div class="radio">
+                        <input class="field rad" id="Varias" type="radio" name="dia" value="Varias">
+                        <label class="label " for="vsemana">2. Varias veces a la semana </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field rad" id="Unavez" type="radio" name="dia" value="Unavez">
+                        <label class="label ">3. Una vez a la semana </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field rad" id="Alguna" type="radio" name="dia" value="Alguna">
+                        <label class="label ">4. Alguna vez al mes</label>
+                    </div>
+                    <span id="frecuencia_span"></span>
+                    <div>
+                        <label>Considera que la atención al cliente es: </label>
+                        <div class="radio">
+                            <input class="field aten" id="Excelente" type="radio" name="atencion" value="Excelente">
+                            <label class="label ">1. Excelente</label>
+                        </div>
+                        <div class="radio">
+                            <input class="field aten" id="Bueno" type="radio" name="atencion" value="Excelente">
+                            <label class="label ">2. Bueno</label>
+                        </div>
+                        <div class="radio">
+                            <input class="field aten" id="Regular" type="radio" name="atencion" value="Regular">
+                            <label class="label ">3. Regular </label>
+                        </div>
+                        <div class="radio">
+                            <input class="field aten" id="Desagradable" type="radio" name="atencion" value="Desagradable">
+                            <label class="label ">4. Desagradable </label>
+                        </div>
+                        <span id="atencion_span"></span>
+                    </div>
+
+
+                    </br> <label>Considera que la presentación de los Productos </label>
+                    <div class="radio">
+                        <input class="field pre" id="Excelente" type="radio" name="excelent" value="Excelente">
+                        <label class="label ">1. Excelente</label>
+                    </div>
+                    <div class="radio">
+                        <input class="field pre" id="Bueno" type="radio" name="excelent" value="Excelente">
+                        <label class="label ">2. Bueno</label>
+                    </div>
+                    <div class="radio">
+                        <input class="field pre" id="Regular" type="radio" name="excelent" value="Regular">
+                        <label class="label ">3. Regular </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field pre" id="Malo" type="radio" name="excelent" value="Malo">
+                        <label class="label ">4. Malo </label>
+                    </div>
+                    <span id="presentacion_span"> </span>
+                    <div>
+                        </br><label class="Elegir" for="region">Cual es el producto que mas consume</label>
+                        <select class="select" id="region">
+                            <option value="">- Seleccionar -</option>
+                            <option value="pasteles">Pasteles</option>
+                            <option value="bocaditos">Bocaditos</option>
+                            <option value="bebidas">Bebidas</option>
+                        </select>
+                    </div>
+                    <span id="producto_span"></span>
+                    </br> <label> ¿Qué es lo que mas le gusta de nuestros productos? </label>
+                    <div class="radio">
+                        <input class="field gust" id="Sabores" type="radio" name="sabor" value="Sabores">
+                        <label class="label" for="sabor">1. Los sabores </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field gust" id="Decoracion" type="radio" name="sabor" value="Decoracion">
+                        <label class="label" for="Decoracion">2. El decorado </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field gust" id="Relleno" type="radio" name="sabor" value="Relleno">
+                        <label class="label" for="relle">3. Los rellenos </label>
+                    </div>
+                    <div class="radio">
+                        <input class="field gust" id="Todas" type="radio" name="sabor" value="Todas">
+                        <label class="label" for="Todas ">4. Todas las anteriores </label>
+                    </div>
+                    <span id="gustos_span"></span>
+                    </br>
+                    <div>
+                        <label>Qué servicios desearian que se mejoren:</label>
+
+                        <div class="check">
+                            <label class="label " for="cliente">Atención al cliente</label>
+                            <input class="serv" type="checkbox" name="atencioon" id="cliente">
+                        </div>
+                        <div class="check">
+                            <label class="label " for="presentacion">Presentación de los productos</label>
+                            <input class="serv" type="checkbox" name="products" id="presentacion">
+                        </div>
+
+                        <div class="check">
+                            <label class="label " for="variedad">Mayor variedad de Productos</label>
+                            <input class="serv" type="checkbox" name="producto" id="variedad ">
+                        </div>
+                        <div class="check">
+                            <label class="label " for="servicio">Aseo en los Servicios Higienicos</label>
+                            <input class="serv" type="checkbox" name="sh" id="servicio">
+                        </div>
+                    </div>
+                    <span id="servicio_span"></span>
+                    </br></br><input type="submit" class="button" />
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer class="footer" style="color: #414141">
+        <div class="container distribution" style="padding: 15px 0">
+            <address class="f__text">
+                Plaza lago km 6.5 via Puntilla
+                <br />
+                Samborondón, Guayaquil
+                <br />
+            </address>
+            <div>
+                <p style="margin: 0" class="f__text">
+                    <small>Grupo #3</small>
+                </p>
+                <p style="margin: 0" class="f__text">
+                    &copy; Copyright Pastelería 2022
+                </p>
+            </div>
+            <div class="social">
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        var frecuencia_span = document.getElementById("frecuencia_span");
+        var atencion_span = document.getElementById("atencion_span");
+        var presentacion_span = document.getElementById("presentacion_span");
+        var producto_span = document.getElementById("producto_span");
+        var gustos_span = document.getElementById("gustos_span");
+        var servicio_span = document.getElementById("servicio_span");
+
+
+        var formulario = document.getElementById("califiquenos");
+        formulario.addEventListener("submit", validar);
+        var frecuencia = document.querySelectorAll(".rad");
+        var atencion = document.querySelectorAll(".aten");
+        var presentacion = document.querySelectorAll(".pre");
+        var producto = document.getElementById("region");
+        var gustos = document.querySelectorAll(".gust");
+        var servicios = document.querySelectorAll(".serv");
+        var valido = true;
+        function validar(evento) {
+
+            frecuencia_span.innerText = "";
+            atencion_span.innerText = "";
+            presentacion_span.innerText = "";
+            producto_span.innerText = "";
+            gustos_span.innerText = "";
+            servicio_span.innerText = "";
+
+            let aux = false;
+            for (option of frecuencia) {
+                if (option.checked) {
+                    aux = true;
+                }
+            }
+
+            let aux3 = false;
+            for (option of presentacion) {
+                if (option.checked) {
+                    aux3 = true;
+                }
+            }
+
+            let aux4 = false;
+            for (option of gustos) {
+                if (option.checked) {
+                    aux4 = true;
+                }
+            }
+
+            if (producto.selectedIndex == 0) {
+                valido = false;
+                producto_span.innerText = "SELECCIONE UN ELEMENTO DE PRODUCTO";
+
+            }
+
+            let aux5 = false;
+            for (option of atencion) {
+                if (option.checked) {
+                    aux5 = true;
+                }
+            }
+
+            let aux2 = false;
+            for (option of servicios) {
+                if (option.checked) {
+                    aux2 = true;
+                }
+            }
+
+            if (aux == false) { valido = false; frecuencia_span.innerText = "SELECCIONE UN ELEMENTO DE FRECUENCIA"; }
+            if (aux5 == false) { valido = false; atencion_span.innerText = "SELECCIONE UN ELEMENTO DE ATENCION"; }
+            if (aux3 == false) { valido = false; presentacion_span.innerText = "SELECCIONE UN ELEMENTO DE PRESENTACION"; }
+            if (aux4 == false) { valido = false; gustos_span.innerText = "SELECCIONE UN ELEMENTO"; }
+            if (aux2 == false) { valido = false; servicio_span.innerText = "SELECCIONE AL MENEOS UN ELEMENTO"; }
+
+
+
+
+
+            if (valido == true) {
+                alert("formulario exitoso");
+            } else if (valido == false) {
+                valido = true;
+                evento.preventDefault();
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

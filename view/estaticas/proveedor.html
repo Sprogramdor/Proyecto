@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/panlog.ico" type="image/x-icon">
+    <meta name="description" content="Formulario para realizar la solictud de ser nuevo proveedor para la pasteleria">
+    <meta name="keywords" content="Mycake, productos, servicios, atencion, variedad, ">
+    <meta name="author" content="CRUZ DIAZ MILENA LIZBETH">
+    <link rel="icon" href="assets/∫img/panlog.ico" type="image/x-icon">
+    <title>Mycake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #proveedor {
+            width: 70%;
+            margin: 35px auto;
+            -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+            padding: 2rem;
+            border-radius: .5rem;
+        }
+
+        .label {
+            color: #000;
+        }
+
+        span {
+            color: red;
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1::first-letter {
+            color: orange;
+            font-variant: small-caps;
+
+
+        }
+
+        div[class="personales"] {
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div[class="elegir"] {
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div[class="seleccionar"] {
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container bar">
+            <a href="index.html"><img class="bar__img" src="img/logo.png" alt="logo" /></a>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menu__link" href="index.html">Inicio</a></li>
+                    <li><a class="menu__link" href="productos.html">Productos</a></li>
+                    <li><a class="menu__link" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="menu__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="proveedor">
+        <form id="califiquenos">
+            <fieldset>
+                <h1 style="color: #000;">Deseo ser Nuevo Proveedor</h1>
+
+
+
+                <div class="personales">
+                    <label for="name">Nombres:</label>
+                    <input type="text" id="nameid" placeholder="Ingresa tu nombre">
+                    <span id="name_span"></span>
+                </div>
+
+
+                </br>
+                <div class="personales">
+                    <label for="lastName">Apellidos: </label>
+                    <input type="text" id="lastNameid" placeholder="Ingresa tu apellido">
+                    <span id="apellido_span"></span>
+                </div>
+
+
+                </br>
+                <div class="personales">
+                    <label for="cedula">Cedula: </label>
+                    <input type="text" id="cedulaid" placeholder="Ingresa su Cedula ">
+
+                </div>
+                <span id="cedula_span"></span>
+                </br>
+                <div class="personales">
+                    <label for="correo1">Correo Electrónico: </label>
+                    <input type="text" id="correo1id" placeholder="Ingresa tu correo Electrónico">
+
+                </div>
+                <span id="correo_span"></span>
+                </br>
+                <div class="personales">
+                    <label for="numero">Telefono: </label>
+                    <input type="text" id="numeroid" placeholder="Ingresa tu Telefono">
+
+                </div>
+                <span id="numero_span"></span>
+
+
+
+                </br>
+
+                <div class="elegir">
+                    <label>¿Cómo prefiere enviarnos sus requistos?</label></br>
+                    </br><label class="label" for="correo">Correo Electrónico</label>
+                    <input class="requi" type="checkbox" name="requistos" id="correo">
+
+                </div>
+
+                </br>
+                <div class="elegir">
+                    <label class="label" for="whatsapp">Al Whatsapp</label>
+                    <input class="requi" type="checkbox" name="requistos" id="whatsapp">
+                </div>
+
+
+                </br>
+                <div class="elegir">
+                    <label class="label" for="personal">En el local</label>
+                    <input class="requi" type="checkbox" name="requistos" id="personal ">
+                </div>
+                <span id="requisito_span"></span>
+                </div>
+
+
+                <div class="seleccionar">
+                    </br><label class="Elegir" for="region">¿El proveedor esta registrado en el país?</label>
+                    <select class="select" id="region">
+                        <option value="">- Seleccionar -</option>
+                        <option value="yes">SI</option>
+                        <option value="not">NO</option>
+                    </select>
+                    <span id="pais_span"></span>
+                </div>
+
+
+
+                <div class="seleccionar">
+                    <label class="Elegir" for="region">¿El proveedor puede proporcionar un certificado deorigen para sus productos?</label>
+                    <select class="select" id="provedores">
+                        <option value="">- Seleccionar -</option>
+                        <option value="yes">SI</option>
+                        <option value="not">NO</option>
+                    </select>
+                    <span id="proveedor_span"></span>
+                </div>
+
+
+
+                </br> <input class="button" type="submit">
+
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer class="footer" style="color: #414141">
+        <div class="container distribution" style="padding: 15px 0">
+            <address class="f__text">
+                Plaza lago km 6.5 via Puntilla
+                <br />
+                Samborondón, Guayaquil
+                <br />
+            </address>
+            <div>
+                <p style="margin: 0" class="f__text">
+                    <small>Grupo #3</small>
+                </p>
+                <p style="margin: 0" class="f__text">
+                    &copy; Copyright Pastelería 2022
+                </p>
+            </div>
+            <div class="social">
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var name_span = document.getElementById("name_span");
+        var apellido_span = document.getElementById("apellido_span");
+        var cedula_span = document.getElementById("cedula_span");
+        var correo_span = document.getElementById("correo_span");
+        var numero_span = document.getElementById("numero_span");
+        var requisito_span = document.getElementById("requisito_span");
+        var pais_span = document.getElementById("pais_span");
+        var proveedor_span = document.getElementById("proveedor_span");
+
+
+        var name_val = /^[a-z ,.'-]+$/i;
+        var lastName_val = /^[a-z ,.'-]+$/i;
+        var cedula_val = /^[0-9]{10}$/i;
+        var correo1_val = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        var numero_val = /^[0-9]{10}$/i;
+
+        var formulario = document.getElementById("califiquenos");
+        formulario.addEventListener("submit", validar);
+
+        var nombre = document.getElementById("nameid");
+        var lastName = document.getElementById("lastNameid");
+        var cedula = document.getElementById("cedulaid");
+        var correo1 = document.getElementById("correo1id");
+        var numero = document.getElementById("numeroid");
+
+        var requisitos = document.querySelectorAll(".requi");
+        var pais = document.getElementById("region");
+        var proveedor = document.getElementById("provedores");
+        var valido = true;
+
+        function validar(evento) {
+            name_span.innerText = "";
+            apellido_span.innerText = "";
+            cedula_span.innerText = "";
+            correo_span.innerText = "";
+            numero_span.innerText = "";
+            requisito_span.innerText = "";
+            pais_span.innerText = "";
+            proveedor_span.innerText = "";
+
+            if (!name_val.test(nombre.value)) {
+                valido = false;
+                name_span.innerText = "EL NOMBRE DEBE CONTENER LETRAS";
+
+            }
+
+            if (!lastName_val.test(lastName.value)) {
+                valido = false;
+                apellido_span.innerText = "EL APELLIDO DEBE CONTENER LETRAS";
+
+            }
+            if (!cedula_val.test(cedula.value)) {
+                valido = false;
+                cedula_span.innerText = "LA CEDULA DEBE CONTENER 10 NUMEROS";
+
+            }
+            if (!correo1_val.test(correo1.value)) {
+                valido = false;
+                correo_span.innerText = "EL CORREO NO TIENE UNA ESTRUCTURA VALIDA";
+
+            }
+            if (!numero_val.test(numero.value)) {
+                valido = false;
+                numero_span.innerText = "EL CELULAR DEBE CONTENER 10 NUMEROS"
+
+            }
+
+
+            let aux = false;
+            for (option of requisitos) {
+                if (option.checked) {
+                    aux = true;
+                }
+            }
+
+            if (aux == false) { valido = false; requisito_span.innerText = "SELECCIONE UN ELEMENTO DE REQUISITOS"; }
+
+
+
+            if (pais.selectedIndex == 0) {
+                valido = false;
+                pais_span.innerText = "SELECCIONE UN ELEMENTO DE PAIS";
+
+            }
+
+
+            if (proveedor.selectedIndex == 0) {
+                valido = false;
+                proveedor_span.innerText = "SELECCIONE UN ELEMENTO DE PROVEEDOR";
+
+            }
+
+
+
+
+            if (valido == true) {
+                alert("formulario exitoso");
+            } else if (valido == false) {
+                valido = true;
+                evento.preventDefault();
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

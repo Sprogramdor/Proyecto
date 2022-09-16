@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/panlog.ico" type="image/x-icon">
+    <meta name="description" content="vision mision e historia de la pasteleria MYCAKE.">
+    <meta name="keywords" content="Mycake, historia, vision, mision,formulario, escribenos">
+    <link rel="icon" href="img/panlog.ico" type="image/x-icon">
+    <title>Nosotros Contactanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .grid-imagen {
+            grid-area: grid-imagen;
+            background-image: url(img/nosotros.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+
+        .imagen_content {
+            background-color: #000000bf;
+            height: 500px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+        }
+
+        .main_container {
+            margin: 30px 30px;
+            border: 1px solid rgb(119, 117, 119);
+
+        }
+
+        .label__error {
+            font-size: 18px;
+            font-weight: 500;
+            color: #ff0000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label_form {
+            margin: 0 400px 20px 400px;
+        }
+
+        #mensaje {
+            margin: 20px 400px 40px 400px;
+            width: 300px;
+            height: 150px;
+            border: solid #ab5300;
+            ;
+        }
+
+        .formulario_input {
+            margin: 20px 400px 10px 400px;
+            width: 300px;
+
+        }
+
+        #main_container {
+            background-color: #fff;
+        }
+
+        .button {
+            margin: 0 400px 20px 400px;
+        }
+
+
+        .form_group-correcto .formulario__validacion-estado {
+            color: #1ed12d;
+            opacity: 1;
+        }
+
+        .form_group-incorrecto .formulario__validacion-estado {
+            color: #bb2929;
+            opacity: 1;
+        }
+
+        .form_group-incorrecto .label_form {
+            color: #bb2929;
+        }
+
+        .form_group-incorrecto .formulario_input {
+            border: 3px solid #bb2929;
+        }
+
+        .formulario_input-error-activo {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container bar">
+            <a href="index.html">
+                <img class="bar__img" src="img/logo.png" alt="logo" />
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menu__link" href="index.html">Inicio</a></li>
+                    <li><a class="menu__link" href="productos.html">Productos</a></li>
+                    <li><a class="menu__link" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="menu__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="grid-imagen">
+        <div class="imagen_content">
+            <h1 style="margin: 15px 0;">ACERCA DE NOSOTROS...</h1>
+        </div>
+    </div>
+
+    <main class="container" id="main_container">
+        <section class="shadown">
+            <h1 style="color: #ffffff; font-size: 50px; background-color: #140d05;">Envianos tu dulce mensaje</h1>
+            <a href=""></a>
+
+            <form class="formulario" id="formulario">
+
+                <div class="form_group" id="grupo_nombre">
+                    <label class="label_form">Nombre <strong>*</strong> :</label>
+                    <div class="Formulario_grupo-input">
+                        <input class="formulario_input" type="text" id="name" name="name" placeholder="Ingresa tu nombre" required />
+                    </div>
+                    <label class="label__error"></label>
+                </div>
+
+                <div class="form_group" id="grupo_email">
+                    <label class="label_form">Email<strong> *</strong> :</label>
+                    <div class="Formulario_grupo-input">
+                        <input class="formulario_input" type="email" id="email" name="email" placeholder="Ej: correo@correo.com" required />
+                        <label class="label_error"></label>
+                    </div>
+                </div>
+                <div class="form_group" id="grupo_telf">
+                    <label class="label_form">Telefono :</label>
+                    <input class="formulario_input" type="text" id="telf" name="phone" placeholder="ingresa tu numero" />
+                </div>
+                <div class="form_group" id="grupo_web">
+                    <label class="label_form">Sitio Web :</label>
+                    <input class="formulario_input" type="text" id="siteweb" name="web" placeholder="Ingrese su Sitio Web" />
+                </div>
+                <div class="form_group" id="grupo_asunto">
+                    <label class="label_form">Asunto :</label>
+                    <input class="formulario_input" type="text" id="asunto" name="asunto" placeholder="Ingrese el motivo" />
+                </div>
+                <div class="form_group" id="grupo_msj">
+                    <label class="label_form">Mensaje :</label>
+                    <textarea class="textarea_form" id="mensaje" name="msj" placeholder="ingresa tu mensaje aqui"></textarea>
+                </div>
+                <input class="button" type="submit" value="Enviar" />
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer" style="color: #414141">
+        <div class="container distribution" style="padding: 15px 0">
+            <address class="f__text">
+                Plaza lago km 6.5 via Puntilla
+                <br />
+                Samborondón, Guayaquil
+                <br />
+            </address>
+            <div>
+                <p style="margin: 0" class="f__text">
+                    <small>Grupo #3</small>
+                </p>
+                <p style="margin: 0" class="f__text">
+                    &copy; Copyright Pastelería 2022
+                </p>
+            </div>
+            <div class="social">
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const formulario = document.getElementById('formulario');
+        const inputs = document.querySelectorAll('#formulario input');
+        const lblError = document.querySelectorAll(".label__error");
+        const small = document.createElement("SMALL");
+        const expresiones = {
+            nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+            mensaje: /^[a-zA-Z0-9]{0,100}$/,
+            email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+            telefono: /^\d{10}$/
+        };
+        const validarFormulario = (e) => {
+            switch (e.target.name) {
+                case "name":
+                    if (expresiones.nombre.test(e.target.value)) {
+                        document.getElementById('grupo_nombre').classList.remove('form_group-incorrecto');
+                        document.getElementById('grupo_nombre').classList.add('form_group-correcto');
+                        validartamaño(e, 20);
+
+
+                    } else {
+                        console.log("no valido");
+                        document.getElementById('grupo_nombre').classList.add('form_group-incorrecto');
+                        document.getElementById('grupo_nombre').classList.remove('form_group-correcto');
+                        notification(0);
+                    }
+                    break;
+                case "email":
+                    if (expresiones.email.test(e.target.value)) {
+                        document.getElementById('grupo_email').classList.remove('form_group-incorrecto');
+                        document.getElementById('grupo_email').classList.add('form_group-correcto');
+                    } else {
+                        console.log("no valido");
+                        document.getElementById('grupo_email').classList.add('form_group-incorrecto');
+                        document.getElementById('grupo_email').classList.remove('form_group-correcto');
+                    }
+                    break;
+                case "phone":
+                    if (expresiones.telefono.test(e.target.value)) {
+                        document.getElementById('grupo_telf').classList.remove('form_group-incorrecto');
+                        document.getElementById('grupo_telf').classList.add('form_group-correcto');
+                    } else {
+                        console.log("no valido");
+                        document.getElementById('grupo_telf').classList.add('form_group-incorrecto');
+                        document.getElementById('grupo_telf').classList.remove('form_group-correcto');
+                    }
+                    break;
+            }
+        }
+        inputs.forEach((input) => {
+            input.addEventListener('keyup', validarFormulario);
+            input.addEventListener('blur', validarFormulario);
+        });
+
+        function validartamaño(e, size) {
+            if (e.target.value.length >= size) {
+                e.target.value = e.target.value.substring(0, size);
+            }
+        }
+
+        function notification(position, underrage = false) {
+            if (lblError[position].hasChildNodes() === true) {
+                return;
+            } else {
+                const small = document.createElement("SMALL");
+                small.textContent = "*No se permiten numeros ni campos vacios";
+                small.style.visibility = "visible";
+                small.style.cssText = 'margin-left: 400px;margin-top:0';
+                lblError[position].appendChild(small);
+                setTimeout(() => {
+                    small.remove();
+                }, 2000);
+            }
+        }
+    </script>
+</body>
